@@ -9,15 +9,14 @@
 <body>
     <div class="container">
         <header>
-         <h1 align = "center">Chayanne: El Ídolo</h1>
+         <h1>Chayanne: El Ídolo</h1>
       </header>
         <nav>
             <ul class="menu">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#acerca-de">Acerca de</a></li>
+                <li><a href="#contactos">Contactos</a></li>
             </ul>
         </nav>
         <aside>
@@ -31,23 +30,34 @@
             </details>
         </aside>
         <article>
-            <p>Chayanne ha lanzado más de 20 álbumes, ha actuado en telenovelas y películas, y ha realizado giras internacionales que lo han consolidado como una figura icónica en la música latina.</p>
-            <section>
-                <h2>Biografía</h2>
-                <p>Elmer Figueroa Arce, conocido artísticamente como Chayanne, nació el 28 de junio de 1968 en Río Piedras, Puerto Rico. Su carrera musical comenzó en la década de 1980 y ha lanzado numerosos álbumes de éxito.</p>
+            <section id="productos">
+                <h2>Productos</h2>
+                <p>Chayanne ha lanzado más de 20 álbumes, actuado en telenovelas y películas, y realizado giras internacionales que lo han consolidado como una figura icónica en la música latina.</p>
             </section>
-            <section>
-                <h2>Discografía</h2>
-                <ul>
-                    <li><strong>1984:</strong> Chayanne es mi Nombre</li>
-                    <li><strong>1986:</strong> Sangre Latina</li>
-                    <li><strong>1987:</strong> Chayanne</li>
-                    <li><strong>1988:</strong> Chayanne II</li>
-                    <li><strong>1990:</strong> Tiempo de Vals</li>
-                    <!-- Puedes agregar más álbumes aquí -->
-                </ul>
+            <section id="servicios">
+                <h2>Servicios</h2>
+                <p>Elmer Figueroa Arce, conocido artísticamente como Chayanne, ha brindado entretenimiento a través de su música y presentaciones en vivo, ofreciendo a sus fanáticos experiencias inolvidables.</p>
+            </section>
+            <section id="acerca-de">
+                <h2>Acerca de</h2>
+                <p>Chayanne, nacido el 28 de junio de 1968 en Puerto Rico, es uno de los cantantes más icónicos de la música latina con una carrera que abarca décadas y una vasta discografía de éxitos.</p>
             </section>
         </article>
+
+        <!-- Formulario agregado -->
+        <div class="form-container" id="contactos">
+            <h2>Contactos</h2>
+            <form>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Escribir un mensaje:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
         <footer>Información proporcionada por fans de Chayanne</footer>
     </div>
 </body>
